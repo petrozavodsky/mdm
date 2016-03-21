@@ -1,0 +1,72 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+        // section info
+        section.section_info
+            .container
+
+                h1 Международная клиника MEDEM
+
+                .info_text 
+                    p Современный многопрофильный медицинский центр, оказывающих все виды медицинских услуг по самым высоким мировым стандартам.
+                    p За 15 лет практики, клиника заслужила доверие известных деятелей культуры, бизнеса и политики, жителей и гостей Санкт-Петербурга, ценящих высокое качество услуг и комфортную атмосферу нашего медицинского центра.
+
+                    a(href="#").btn Подробнее
+
+
+                .swiper-container.js-slider-info-tips
+                    .swiper-wrapper
+                        .swiper-slide 123
+                        .swiper-slide 345
+                        .swiper-slide 567
+                    .swiper-button-next
+                    .swiper-button-prev
+
+        
+        // section news
+        section.section_news
+            .container
+
+                h2 Новости клиники
+
+                .news_tizers
+
+                    .news_tizer_one
+                        span.date 15.06.2005
+                        a(href="#")
+                            h3 Летние акции и спецпредложения клиники MEDEM
+                        p.news_tizer_one__text 
+                            |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, itaque a accusantium similique quas possimus deleniti rem tenetur fuga magnam, odio pariatur incidunt libero, sint architecto. Doloribus, possimus reprehenderit rem!
+                        a.showmore(href="#") подробнее
+
+                    .news_tizer_one
+                        span.date 15.06.2005
+                        a(href="#")
+                            h3 Летние акции и спецпредложения клиники MEDEM
+                        p.news_tizer_one__text 
+                            |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, itaque a accusantium similique quas possimus deleniti rem tenetur fuga magnam, odio pariatur incidunt libero, sint architecto. Doloribus, possimus reprehenderit rem!
+                        a.showmore(href="#") подробнее
+
+
+                    .news_tizer_one
+                        span.date 15.06.2005
+                        a(href="#")
+                            h3 Летние акции и спецпредложения клиники MEDEM
+                        p.news_tizer_one__text 
+                            |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, itaque a accusantium similique quas possimus deleniti rem tenetur fuga magnam, odio pariatur incidunt libero, sint architecto. Doloribus, possimus reprehenderit rem!
+                        a.showmore(href="#") подробнее
+
+
+                a(href="#").btn вcе новости
+
+
+                
+        
+        include parts/_footer.jade

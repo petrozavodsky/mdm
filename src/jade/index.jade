@@ -1,0 +1,29 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+        
+        // test links
+        section.test
+          .container
+
+            ul(style="margin: 200px")
+                li
+                    a(href="test.html", style="display: block; margin-bottom: 20px") • Test page • 
+
+                li
+                    a(href="main.html") main.html
+
+                li
+                    a(href="about.html") about.html
+
+                li
+                    a(href="contacts.html") contacts.html
+
+      
+        include parts/_footer.jade

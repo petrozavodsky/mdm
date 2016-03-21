@@ -1,0 +1,111 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+        // test_container
+        section.test_container
+            .container
+
+
+
+                
+                .test_container__right
+
+                    h2 Fonts test
+
+                    ul 
+                        li.test_arial Arial — Съешь еще этих мягких французских булок да выпей чаю.
+                        li.test_opensans Open Sans — Съешь еще этих мягких французских булок да выпей чаю.
+                        li.test_roboto Roboto — Съешь еще этих мягких французских булок да выпей чаю.
+                        li.test_ptsans PT Sans — The quick brown fox jumps over the lazy dog.
+                        li.test_ptserif PT Serif — The quick brown fox jumps over the lazy dog.
+                        li.test_lobster Lobster — The quick brown fox jumps over the lazy dog.
+
+                    h2 Social block
+
+                    include blocks/soc_block.jade
+                    
+                    h2 Google map
+                    
+                    #map(data-lat="45.015846", data-lng="39.035264", data-mapicon="pin.png")
+                    
+                    h2 Grid 
+                        a(href="https://github.com/corysimmons/lost" target="_blank") (documentation)
+                    
+                    .grid_test
+                        div Grid test 1
+                        div Grid test 2
+                        div Grid test 3
+                        div Grid test 4
+                        div Grid test 5
+                        div Grid test 6
+                        div Grid test 7
+                        div Grid test 8
+                        div Grid test 9
+                        div Grid test 10
+                        div Grid test 11
+                        div Grid test 12   
+
+
+                    h2 Masked Input 
+                        a(href="https://github.com/digitalBush/jquery.maskedinput" target="_blank") (documentation)
+
+                    input(type="text" id="phone")
+
+
+                    h2 Custom checkbox 
+
+                    .custom_chbox
+                        input(type="checkbox" class="custom_chbox__input" id="chb1" checked)
+                        label(for="chb1" class="custom_chbox__label") Checkbox 1
+
+                    .custom_chbox
+                        input(type="checkbox" class="custom_chbox__input" id="chb2")
+                        label(for="chb2" class="custom_chbox__label") Checkbox 2
+
+                    .custom_chbox
+                        input(type="checkbox" class="custom_chbox__input" id="chb3")
+                        label(for="chb3" class="custom_chbox__label") Checkbox 3
+
+
+                    //- h2 Fotorama 
+                    //-     a(href="http://fotorama.io/customize/options/" target="_blank") (documentation)
+
+                    //- .fotorama
+                    //-     img(src="http://s.fotorama.io/1.jpg", alt="")
+                    //-     img(src="http://s.fotorama.io/2.jpg", alt="")
+
+                .test_container__left
+                    h3 Other Useful plugins (don't included):
+                    br
+                    ul
+                        li
+                            a(href="https://github.com/daneden/animate.css") animate.css
+                        li
+                            a(href="https://snazzymaps.com/") snazzymaps
+                        li  
+                            a(href="https://github.com/IonDen/ion.rangeSlider") range-slider (best)
+                        li  
+                            a(href="https://github.com/leongersen/noUiSlider") range-slider
+                        li  
+                            a(href="http://fotorama.io/") Fotorama
+                        li  
+                            a(href="https://github.com/elevateweb/elevatezoom") jQuery Zoom Plugin
+                        li  
+                            a(href="https://github.com/outpunk/evil-icons") Evil Icons
+                        li  
+                            a(href="https://github.com/LeaVerou/stretchy") Stretchy inputs 
+                        li  
+                            a(href="https://github.com/ilyabirman/Likely") Likely social buttons 
+                        li  
+                            a(href="https://github.com/wentin/ResponsifyJS") ResponsifyJS
+                        li  
+                            a(href="http://igorescobar.github.io/jQuery-Mask-Plugin/") Another Masked Input
+
+
+        include parts/_footer.jade

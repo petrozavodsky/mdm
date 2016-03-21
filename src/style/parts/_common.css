@@ -1,0 +1,210 @@
+/*
+*	Grid
+*/
+.container {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+
+	@media (--w480) {
+	  width: 100%;
+	}
+
+	@media (--w768) {
+	  width: 768px;
+	}
+
+	@media (--w980) {
+	  width: 980px;
+	}
+
+	@media (--w1200) {
+	  width: 1170px;
+	}
+
+	@media (--w1400) {
+	  width: 1340px;
+	}
+
+	@media (--w1600) {
+	  width: 1540px;
+	}
+}
+
+.showmore  {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 37px;
+	margin-bottom: 10px;
+	color: $blue;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		width: 37px;
+		height: 37px;
+		margin-right: 10px;
+		border-radius: 50%;
+
+		background-image: svg("arr_r", "[stroke]: #fff");
+		background-color: $blue;
+		background-position: 15px center;
+		background-size: 10px;
+		background-repeat: no-repeat;
+	}
+
+	.footer & {
+		color: #fff;
+
+		&:before {
+			background-image: svg("arr_r", "[stroke]: $blue");
+			background-color: #fff;
+		}
+	}
+
+}
+
+
+.btn {
+	display: block;
+	height: 37px;
+	line-height: 35px;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	background: $blue; 
+	border-radius: 18px;
+}
+
+/*
+*	Social block
+*/
+.soc_block {
+	display: block;
+	/*margin: 30px auto;*/
+
+	a {
+		width: 37px;
+		height: 37px;
+		display: inline-block;
+		margin-right: 13px;
+		background-size: 20px;
+		transition: border 0.2s ease-in-out, background 0.2s ease-in-out;
+		border-radius: 50%;
+
+		&.fb {
+			background-image: svg("fb", "[fill]: $blue");
+			background-color: #fff;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		&.tw {
+			background: twitter-color url(../i/tw.svg) center center no-repeat;
+		}
+		&.vk {
+			background-image: svg("vk", "[fill]: $blue");
+			background-color: #fff;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		&.in {
+			background: #fff url(../i/in.svg) center center no-repeat;
+		}
+		&.ig {
+			background: instagram-color url(../i/ig.svg) center center no-repeat;
+		}
+		&.yt {
+			background: youtube-color url(../i/yt.svg) center center no-repeat;
+		}
+		&.pt {
+			background: pinterest-color url(../i/pt.svg) center center no-repeat;
+		}
+		&.ok {
+			background: odnoklassniki-color url(../i/ok.svg) center center no-repeat;
+		}
+		&.fq {
+			background: foursquare-color url(../i/fq.svg) center center no-repeat;
+		}
+		&.gp {
+			background: google-color url(../i/gp.svg) center center no-repeat;
+		}
+		&.lj {
+			background: #004359 url(../i/lj.svg) center center no-repeat;
+		}
+	}
+}
+
+
+/*
+*	Map
+*/
+#map {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 40px;
+
+	.gm-style-cc {
+		display: none !important;
+	}
+
+	.gmnoprint  {
+		/* hide ui */
+	}
+
+	[href*='https://maps.google.com/'] {	
+		/* hide google map icon */
+	}
+}
+
+
+/*
+*	checkbox styles
+*/
+.custom_chbox {
+	margin-bottom: 10px;
+}
+
+input[type=checkbox].custom_chbox__input {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+
+input[type=checkbox].custom_chbox__input + .custom_chbox__label {
+	padding-left: 30px;
+	height: 21px; 
+	display:inline-block;
+	line-height: 21px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 12px;
+	vertical-align:middle;
+	cursor:pointer;
+	color: #808080;
+	transition: color 0.2s;
+
+	&:hover {
+		color: #000;
+	} 
+}
+
+input[type=checkbox].custom_chbox__input:checked + .custom_chbox__label {
+	background-position: 0 -21px;
+	color: #000;
+}
+
+.custom_chbox__label {
+	background-image:url(../i/checkbox.png);
+	user-select: none;
+	margin-bottom: 6px;
+}
+
