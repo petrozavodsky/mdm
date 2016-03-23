@@ -19,15 +19,41 @@ $(document).ready(function () {
     // init masked input
     $("#phone").mask("(999) 999-99-99");
 
-    // init Swiper
+    // init tips Swiper
     var swiper = new Swiper('.js-slider-info-tips', {
-       pagination: '.swiper-pagination',
        paginationClickable: true,
        nextButton: '.swiper-button-next',
        prevButton: '.swiper-button-prev',
        slidesPerView: 3,
-       spaceBetween: 30
+       spaceBetween: 10,
+       breakpoints: {
+           // when window width is <= 320px
+           320: {
+             slidesPerView: 1,
+             spaceBetweenSlides: 0
+           }
+        }
     });
+
+
+    // init Swiper
+    var swiper = new Swiper('.js-big-slider', {
+       pagination: ".swiper-pagination",
+       paginationClickable: true,
+       spaceBetween: 0
+    });
+
+
+
+    // open mobile menu
+    $(".js-open-mobile-menu").click(function() {
+        if ($(".main_menu").hasClass("is-opened")) {
+            $(".main_menu").slideUp().removeClass("is-opened");
+        }
+        else {
+            $(".main_menu").slideDown().addClass("is-opened");
+        }
+    })
 
 
     // initialize map

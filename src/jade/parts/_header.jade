@@ -1,10 +1,48 @@
 // header
 section.header
-	.container
-	
-		a(href="/")
-			img.logo(src="i/logo.png", width="100", height="100", alt="")
 
-		nav.main_menu
-			a(href="about.html") About
-			a(href="contacts.html") Contacts
+	.top_line
+		.container
+			.right_side
+				.good_notes
+					a(href="#") Полезные статьи
+
+				.search_block
+					input(type="text" placeholder="Поиск по сайту")
+
+				a(href="#").appoint запись на приём
+
+			.lang_select
+				a(href="#" class="en")
+				a(href="#" class="ru active")
+
+
+
+
+	.header_content
+		.container
+
+			
+
+			.contact_block
+				p.phone_number +7 812 336 3333
+				p.addr Санкт-Петербург, ул. Марата, 6
+			
+			.mobile_hr
+
+			a(href="/")
+				img.logo(src="i/logo.png" alt="")
+			
+			.mobile_hr.t2
+			.mobile_menu.js-open-mobile-menu
+
+
+			nav.main_menu
+				a(href="#") О клинике
+				a(href="#") Отделения и центры
+				a(href="#") Врачи
+				a(href="#") Услуги и цены
+				a(href="#") НОВОСТИ
+				a(href="#") КОНТАКТЫ
+
+			

@@ -8,11 +8,58 @@ html(lang='ru')
         include parts/_header.jade
 
 
+        big_slider_pic.jpg
+
+
+        // section big slider
+        section.big_slider
+            .swiper-container.js-big-slider
+                .swiper-wrapper
+
+                    .swiper-slide 
+                        .one_big_slide
+                            .big_slide_pic(style="background-image: url(i/big_slider_pic.jpg)")
+                            .container
+                                h2 Медицина для тех,
+                                    br
+                                    | кто ценит качество!
+                                p Команда наших врачей и консультантов включает лучших специалистов Санкт-Петербурга, Москвы и зарубежных стран.
+                                a(href="#").showmore подробнее
+                                hr
+                                a(href="#").all_links Все акции и спецпредложения
+
+                    .swiper-slide 
+                        .one_big_slide
+                            .big_slide_pic(style="background-image: url(i/big_slider_pic.jpg)")
+                            .container
+                                h2 Медицина для тех,
+                                    br
+                                    | кто ценит качество!
+                                p Команда наших врачей и консультантов включает лучших специалистов Санкт-Петербурга, Москвы и зарубежных стран.
+                                a(href="#").showmore подробнее
+                                hr
+                                a(href="#").all_links Все акции и спецпредложения
+
+                    .swiper-slide 
+                        .one_big_slide
+                            .big_slide_pic(style="background-image: url(i/big_slider_pic.jpg)")
+                            .container
+                                h2 Медицина для тех,
+                                    br
+                                    | кто ценит качество!
+                                p Команда наших врачей и консультантов включает лучших специалистов Санкт-Петербурга, Москвы и зарубежных стран.
+                                a(href="#").showmore подробнее
+                                hr
+                                a(href="#").all_links Все акции и спецпредложения
+
+                .swiper-pagination
+
+
         // section info
         section.section_info
             .container
 
-                h1 Международная клиника MEDEM
+                h2 Международная клиника MEDEM
 
                 .info_text 
                     p Современный многопрофильный медицинский центр, оказывающих все виды медицинских услуг по самым высоким мировым стандартам.
@@ -23,11 +70,54 @@ html(lang='ru')
 
                 .swiper-container.js-slider-info-tips
                     .swiper-wrapper
-                        .swiper-slide 123
-                        .swiper-slide 345
-                        .swiper-slide 567
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic1.jpg", alt="")
+                                h3 Клинические отделения и центры
+                                p Широко представлены все клинические направления современной медицины, позволяющие осуществлять комплексное обслуживание.
+                                a.showmore(href="#") подробнее
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic2.jpg", alt="")
+                                h3 Диагностические отделения
+                                p Концентрация и широкий спектр диагностической аппаратуры в клинике позволяет проводить комплексный подход к диагностике заболеваний.
+                                a.showmore(href="#") подробнее
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic3.jpg", alt="")
+                                h3 Педиатрия
+                                p У ребенка любого возраста должен быть личный педиатр. Свой доктор – это член семьи, который всегда с вами.
+                                a.showmore(href="#") подробнее
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic1.jpg", alt="")
+                                h3 Клинические отделения и центры
+                                p Широко представлены все клинические направления современной медицины, позволяющие осуществлять комплексное обслуживание.
+                                a.showmore(href="#") подробнее
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic2.jpg", alt="")
+                                h3 Диагностические отделения
+                                p Концентрация и широкий спектр диагностической аппаратуры в клинике позволяет проводить комплексный подход к диагностике заболеваний.
+                                a.showmore(href="#") подробнее
+
+                        .swiper-slide 
+                            .info_tip
+                                img(src="i/info_pic3.jpg", alt="")
+                                h3 Педиатрия
+                                p У ребенка любого возраста должен быть личный педиатр. Свой доктор – это член семьи, который всегда с вами.
+                                a.showmore(href="#") подробнее
+
                     .swiper-button-next
+
                     .swiper-button-prev
+
+                a(href="#").btn.wide Все отделения и центры
 
         
         // section news

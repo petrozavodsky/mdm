@@ -2,7 +2,7 @@
 *	Grid
 */
 .container {
-	width: 100%;
+	width: 280px;
 	margin: 0 auto;
 	position: relative;
 
@@ -11,7 +11,7 @@
 	}
 
 	@media (--w768) {
-	  width: 768px;
+	  width: 728px;
 	}
 
 	@media (--w980) {
@@ -38,6 +38,7 @@
 	margin-bottom: 10px;
 	color: $blue;
 
+
 	&:before {
 		content: "";
 		display: inline-block;
@@ -51,9 +52,11 @@
 		background-position: 15px center;
 		background-size: 10px;
 		background-repeat: no-repeat;
+		vertical-align: top;
 	}
 
-	.footer & {
+	.footer &,
+	.big_slider & {
 		color: #fff;
 
 		&:before {
@@ -61,6 +64,8 @@
 			background-color: #fff;
 		}
 	}
+
+
 
 }
 
@@ -75,6 +80,19 @@
 	font-weight: 700;
 	background: $blue; 
 	border-radius: 18px;
+
+	&.wide {
+		width: 280px;
+		margin: 0 auto;
+
+		@media (--w768) {
+			width: 320px;
+		}
+	}
+
+	&:hover {
+		opacity: 0.9;
+	}
 }
 
 /*
