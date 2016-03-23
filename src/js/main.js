@@ -28,7 +28,7 @@ $(document).ready(function () {
        spaceBetween: 10,
        breakpoints: {
            // when window width is <= 320px
-           320: {
+           767: {
              slidesPerView: 1,
              spaceBetweenSlides: 0
            }
