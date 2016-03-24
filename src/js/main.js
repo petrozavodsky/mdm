@@ -53,7 +53,10 @@ $(document).ready(function () {
         else {
             $(".main_menu").slideDown().addClass("is-opened");
         }
-    })
+    });
+
+
+    setTimeout(function() { fixArrowsHeight() }, 500);
 
 
     // initialize map
@@ -102,3 +105,15 @@ $(document).ready(function () {
 
 
 });
+
+function fixArrowsHeight() {
+    var h = $(".info_tip img").height();
+    $(".info-tips-slider .swiper-button-prev").height(h);
+    $(".info-tips-slider .swiper-button-next").height(h);
+}
+
+
+
+$(window).resize(function() {
+    setTimeout(function() { fixArrowsHeight() }, 500);
+})
