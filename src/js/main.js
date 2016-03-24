@@ -58,6 +58,8 @@ $(document).ready(function () {
 
     setTimeout(function() { fixArrowsHeight() }, 500);
 
+    setPaginationPos()
+
 
     // initialize map
     function initialize() {
@@ -112,8 +114,19 @@ function fixArrowsHeight() {
     $(".info-tips-slider .swiper-button-next").height(h);
 }
 
+function setPaginationPos() {
+    var h = $(".big_slide_pic").height();
+    if ($(window).width() < 980) {
+        $(".swiper-pagination").css({"top": h-35});
+    }
+    else {
+        $(".swiper-pagination").css({"bottom": 30});
+    }
+}
+
 
 
 $(window).resize(function() {
+    setPaginationPos();
     setTimeout(function() { fixArrowsHeight() }, 500);
 })

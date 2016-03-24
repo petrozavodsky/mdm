@@ -363,11 +363,37 @@
 */
 
 .big_slider {
+	
+	margin: 0 auto;
+
+/*	@media (--w768) {
+		max-width: 768px;
+	}
+
+	@media (--w980) {
+		max-width: 980px;
+	}
+
+	@media (--w1200) {
+		max-width: 1200px;
+	}
+
+	@media (--w1400) {
+		max-width: 1400px;
+	}*/
+
+
+	@media (--w1600) {
+		max-width: 1580px;
+	}
+
+	
 
 	.container {
 		margin: 0 auto;
+		width: 100%;
 
-		@media (--w768) {
+/*		@media (--w768) {
 		  width: 768px;
 		  margin: 0 auto;
 		}
@@ -386,13 +412,13 @@
 
 		@media (--w1600) {
 		  width: 1580px;
-		}
+		}*/
 	}
 	
 	.swiper-slide {
-		height: 404px;
+		height: auto;
 
-		@media (--w768) {
+	/*	@media (--w768) {
 			height: 500px;
 		}
 
@@ -403,7 +429,7 @@
 		@media (--w1400) {
 			height: 527px;
 		}
-
+*/
 		
 	}
 
@@ -450,46 +476,74 @@
 .one_big_slide {
 	height: 100%;
 	position: relative;
-	padding-top: 180px;
+	/*padding-top: 180px;*/
 	overflow: hidden;
 	background-color: $blue;
 	z-index: 1;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
+
+	.container {
+		padding-left: 30px;
+
+
+		@media (--w980) {
+			position: absolute;
+			bottom: 20px;
+		}
+
+		@media (--w1200) {
+			padding-left: 50px;
+		}
+
+		@media (--w1400) {
+			padding-left: 70px;
+		}
+	}
 
 	
 
 	.big_slide_pic {
-		background-size: cover;
-		height: 137px;
-		width: 100%;
 		
-		position: absolute;
+		height: auto;
+		width: calc(100% + 60px);
+		margin-bottom: 45px;
+		margin: 0 -30px 45px;
+
+		
+		/*position: absolute;
 		top: 0;
-		left: 0;
+		left: 0;*/
 
 		@media (--w768) {
-			height: 293px;
+			width: calc(100% + 100px);
+			margin: 0 -50px 45px;
 		}
 
 		@media (--w980) {
-			height: 100%;
+			width: calc(100% + 170px);
+			margin: 0 -85px;
 			z-index: -1;
+		}
+
+		@media (--w1400) {
+			width: calc(100% + 50px);
+    		margin: -30px -50px;
 		}
 	}
 
 	@media (--w768) {
-		padding-top: 335px;
-		padding-left: 30px;
+		/*padding-top: 335px;*/
+		/*padding-left: 30px;*/
 	}
 
 	@media (--w980) {
-		padding-top: 30px;
-		padding-left: 30px;
+		/*padding-top: 30px;*/
+		/*padding-left: 30px;*/
 	}
 
 	@media (--w1400) {
-		padding-top: 160px;
-		padding-left: 75px;
+		/*padding-top: 160px;*/
+		/*padding-left: 75px;*/
 	}
 
 
@@ -529,7 +583,6 @@
 		margin-bottom: 15px;
 
 		br {
-			
 
 			@media (--w768) {
 				display: none;
@@ -569,7 +622,7 @@
 	}
 
 	hr {
-		margin: 20px -20px;
+		margin: 20px 0 20px -30px;
 		height: 1px;
 		border: 0;
 		border-top: 1px solid #fff;
@@ -585,7 +638,8 @@
 		line-height: 16px;
 		color: #fff;
 		font-weight: 300;
-		
+		margin-bottom: 20px;
+		display: block;
 		text-transform: uppercase;
 
 		@media (--w980) {
@@ -602,8 +656,8 @@
 		overflow: hidden;
 		display: block;
 		position: absolute;
-		bottom: -17px;
-    	right: 12px;
+		bottom: -20px;
+    	right: 30px;
 
     	@media (--w768) {
 			right: 52px;
