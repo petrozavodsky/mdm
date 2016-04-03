@@ -7,20 +7,32 @@
 	position: relative;
 
 	@media (--w768) {
-	  width: 728px;
+	  min-width: 728px;
+	  max-width: 980px;
+	  width: auto;
+	  padding: 0 20px; 
 	  margin: 0 auto;
 	}
 
 	@media (--w980) {
-	  width: 980px;
+	  min-width: 980px;
+	  max-width: 1170px;
+	  width: auto;
+	  padding: 0 30px;
 	}
 
 	@media (--w1200) {
-	  width: 1170px;
+	  min-width: 1170px;
+	  max-width: 1340px;
+	  width: auto;
+	  padding: 0 30px;
 	}
 
 	@media (--w1400) {
-	  width: 1340px;
+	  min-width: 1340px;
+	  max-width: 1440px;
+	  width: auto;
+	  padding: 0 30px;
 	}
 
 	@media (--w1600) {
