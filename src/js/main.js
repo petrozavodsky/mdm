@@ -117,10 +117,10 @@ function fixArrowsHeight() {
 function setPaginationPos() {
     var h = $(".big_slide_pic").height();
     if ($(window).width() < 980) {
-        $(".swiper-pagination").css({"top": h-35});
+        $(".swiper-pagination").css({"top": h-35, "bottom": "auto"});
     }
     else {
-        $(".swiper-pagination").css({"bottom": 30});
+        $(".swiper-pagination").css({"bottom": 30, "top": "auto"});
     }
 }
 

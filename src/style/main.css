@@ -200,8 +200,12 @@
 		margin-right: -20px;
 	}
 
+	@media (--w980)  {
+		margin-right: -30px;
+	}
+
 	@media (--w1400)  {
-		margin-right: -70px;
+		margin-right: -30px;
 	}
 
 }
@@ -380,11 +384,11 @@
 		}
 
 		@media (--w1200) {
-			margin: 0 -40px;
+			margin: 0 -30px;
 		}
 
 		@media (--w1400) {
-			margin: 0 -70px;
+			margin: 0 -30px;
 		}
 	}
 
@@ -444,11 +448,11 @@
 		}
 
 		@media (--w1200) {
-			padding-left: 40px;
+			padding-left: 30px;
 		}
 
 		@media (--w1400) {
-			padding-left: 70px;
+			padding-left: 30px;
 		}
 	}
 
@@ -701,7 +705,7 @@
     	background-size: 16px;
 		background-repeat: no-repeat;
 
-		@media (--w1400) {
+		@media (--w1600) {
 			height: 265px;
 			right: -55px;
 		}
@@ -715,7 +719,7 @@
     	background-size: 16px;
 		background-repeat: no-repeat;
 
-		@media (--w1400) {
+		@media (--w1600) {
 			height: 265px;
 			left: -55px;
 		}
