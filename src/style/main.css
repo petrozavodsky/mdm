@@ -956,6 +956,46 @@
 }
 
 
+
+/*
+*	Doctors
+*/
+
+.doctors_list {
+	margin-top: 60px;
+}
+.doctors_list__item {
+	text-align: center;
+}
+.doctors_list__pic {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 25px;
+}
+.doctors_list__name {
+	color: $blue;
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.doctors_list__spec {
+	display: block;
+	border-top: 1px solid #c0c0c0;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #808285;
+	width: 200px;
+	margin: 0 auto;
+}
+
+
+
+
 /*
 *	Footer
 */

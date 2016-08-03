@@ -32,6 +32,28 @@ $(document).ready(function () {
              slidesPerView: 1,
              spaceBetweenSlides: 0
            }
+
+        }
+    });
+
+
+    // init doctors Swiper
+    var swiper = new Swiper('.js-doctor-slider', {
+       paginationClickable: true,
+       nextButton: '.swiper-button-next',
+       prevButton: '.swiper-button-prev',
+       slidesPerView: 4,
+       spaceBetween: 10,
+       breakpoints: {
+           // when window width is <= 320px
+           767: {
+             slidesPerView: 1,
+             spaceBetweenSlides: 0
+           },
+           1400: {
+             slidesPerView: 5,
+             spaceBetweenSlides: 0
+           }
         }
     });
 
