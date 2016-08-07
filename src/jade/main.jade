@@ -59,50 +59,39 @@ html(lang='ru')
                     .swiper-pagination
 
 
-        // section doctors
-        section.doctors_list
+        // section derections
+        section.derections_list
             .container
-                .swiper-container.js-doctor-slider
-                    .swiper-wrapper
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Константинопольский Константин
-                                span(class="doctors_list__spec") Гастроэнтерология
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
+                .slider_holster.derections_list_slider
+                    .swiper-container.js-derections-slider
+                        .swiper-wrapper
+                            .swiper-slide 
+                                .derections_list__item
+                                    img(src="i/derection_list__item.jpg" alt="" class="derections_list__pic")
+                                    span(class="derections_list__spec") Гастроэнтерология
 
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .derections_list__item
+                                    img(src="i/derection_list__item.jpg" alt="" class="derections_list__pic")
+                                    span(class="derections_list__spec") Гастроэнтерология
 
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .derections_list__item
+                                    img(src="i/derection_list__item.jpg" alt="" class="derections_list__pic")
+                                    span(class="derections_list__spec") Гастроэнтерология
 
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .derections_list__item
+                                    img(src="i/derection_list__item.jpg" alt="" class="derections_list__pic")
+                                    span(class="derections_list__spec") Гастроэнтерология
 
-                        .swiper-slide 
-                            .doctors_list__item
-                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
-                                p(class="doctors_list__name") Фамилия Имя Отчество
-                                span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .derections_list__item
+                                    img(src="i/derection_list__item.jpg" alt="" class="derections_list__pic")
+                                    span(class="derections_list__spec") Гастроэнтерология
+
+                    .swiper-button-next.derections_list-button-next
+                    .swiper-button-prev.derections_list-button-prev
 
 
         // section info
@@ -116,11 +105,64 @@ html(lang='ru')
                     p За 15 лет практики, клиника заслужила доверие известных деятелей культуры, бизнеса и политики, жителей и гостей Санкт-Петербурга, ценящих высокое качество услуг и комфортную атмосферу нашего медицинского центра.
 
                     a(href="#").btn Подробнее
+                  
 
-                .info-tips-slider
+        // section doctors
+        section.doctors_list
+            .container
+                .slider_holster.doctors_list_slider
+                    .swiper-container.js-doctor-slider
+                        .swiper-wrapper
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Константинопольский Константин
+                                    span(class="doctors_list__spec") Гастроэнтерология
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+
+                            .swiper-slide 
+                                .doctors_list__item
+                                    img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                    p(class="doctors_list__name") Фамилия Имя Отчество
+                                    span(class="doctors_list__spec") Гастроэнтерология
+
+                    .swiper-button-next.doctors_list-button-next
+                    .swiper-button-prev.doctors_list-button-prev
+
+
+        // section info
+        // section.section_info-tips
+            .container
+                .slider_holster.info-tips-slider
                     .swiper-container.js-slider-info-tips
                         .swiper-wrapper
-
                             .swiper-slide 
                                 .info_tip
                                     img(src="i/info_pic1.jpg", alt="")
@@ -163,56 +205,36 @@ html(lang='ru')
                                     p У ребенка любого возраста должен быть личный педиатр. Свой доктор – это член семьи, который всегда с вами.
                                     a.showmore(href="#") подробнее
 
-                    .swiper-button-next
-                    .swiper-button-prev
+                    .swiper-button-next.info_tip-button-next
+                    .swiper-button-prev.info_tip-button-prev
 
                 a(href="#").btn.wide Все отделения и центры
 
-        
-        // section news
-        section.section_news
+
+        section.service_blocks
             .container
+                .service_wide
+                    img(src="i/service_wide.jpg", alt="")
+                    .service_wide__content
+                        h2 УСЛУГИ И ЦЕНЫ
+                        p Мы рады предложить вам пройти лечение в клиниках МЕДЕМ на выгодных для вас условиях.
+                .service_title
+                    p Акции и Спецпредложения
+                .service_shorts
+                    .service_shorts__half
+                        img(src="i/service_short1.jpg", alt="")
+                        .service_shorts__content
+                            span 2 мая–30 июня 2016
+                            h3 −15% на плазмотерапию PRP
+                            p Скидка 15% на ботокс для владельцев дисконтных карт МЕДЕМ действует дополнительная скидка.
 
-                h2 Новости клиники
+                    .service_shorts__half
+                        img(src="i/service_short2.jpg", alt="")
+                        .service_shorts__content
+                            span 2 мая–30 июня 2016
+                            h3 −15% на плазмотерапию PRP
+                            p Скидка 15% на ботокс для владельцев дисконтных карт МЕДЕМ действует дополнительная скидка.
 
-                .news_tizers
-
-                    .news_tizer_one
-                        span.date 15.06.2005
-
-                        .rel_height
-                            a(href="#")
-                                h3 Летние акции и спецпредложения клиники MEDEM
-                            p.news_tizer_one__text 
-                                |  Уважаемые пациенты, лето - отличная пора для того, чтобы укрепить свое здоровье перед холодным сезоном, вылечить заболевания, что давно тревожат, пройти диагностику или профилактический осмотр...
-                        
-                        a.showmore(href="#") подробнее
-
-                    .news_tizer_one
-                        span.date 15.06.2005
-
-                        .rel_height
-                            a(href="#")
-                                h3 Первая помощь в случае остановки сердца или дыхания
-                            p.news_tizer_one__text 
-                                |  Лето - прекрасная пора положительных эмоций и долгожданных отпусков. Однако, кроме приятных моментов, лето таит в себе и некоторые опасности...
-                        a.showmore(href="#") подробнее
-
-
-                    .news_tizer_one
-                        span.date 15.06.2005
-                        
-                        .rel_height
-                            a(href="#")
-                                h3 Клиника MEDEM выступила официальным партнером XX Петербургского губернаторского теннисного турнира
-                            p.news_tizer_one__text 
-                                |  Международная клиника MEDEM в этом году выступила официальным партнером мероприятия и подготовила победителям турнира особые подарки — именные сертификаты на оказание медицинских услуг...
-                        a.showmore(href="#") подробнее
-
-
-                a(href="#").btn вcе новости
-
-
-                
+        include blocks/section_news.jade               
         
         include parts/_footer.jade

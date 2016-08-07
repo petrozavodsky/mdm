@@ -22,8 +22,8 @@ $(document).ready(function () {
     // init tips Swiper
     var swiper = new Swiper('.js-slider-info-tips', {
        paginationClickable: true,
-       nextButton: '.swiper-button-next',
-       prevButton: '.swiper-button-prev',
+       nextButton: '.info_tip-button-next',
+       prevButton: '.info_tip-button-prev',
        slidesPerView: 3,
        spaceBetween: 10,
        breakpoints: {
@@ -40,14 +40,59 @@ $(document).ready(function () {
     // init doctors Swiper
     var swiper = new Swiper('.js-doctor-slider', {
        paginationClickable: true,
-       nextButton: '.swiper-button-next',
-       prevButton: '.swiper-button-prev',
+       nextButton: '.doctors_list-button-next',
+       prevButton: '.doctors_list-button-prev',
        slidesPerView: 4,
        spaceBetween: 10,
        breakpoints: {
            // when window width is <= 320px
-           767: {
+           480: {
              slidesPerView: 1,
+             spaceBetweenSlides: 0
+           },
+           767: {
+             slidesPerView: 2,
+             spaceBetweenSlides: 0
+           },
+           980: {
+             slidesPerView: 3,
+             spaceBetweenSlides: 0
+           },
+           1200: {
+             slidesPerView: 4,
+             spaceBetweenSlides: 0
+           },
+           1400: {
+             slidesPerView: 5,
+             spaceBetweenSlides: 0
+           }
+        }
+    });
+
+
+    // init derections Swiper
+    var swiper = new Swiper('.js-derections-slider', {
+       paginationClickable: true,
+       nextButton: '.derections_list-button-next',
+       prevButton: '.derections_list-button-prev',
+       slidesPerView: 4,
+       spaceBetween: 10,
+       breakpoints: {
+           // when window width is <= 320px
+           480: {
+             slidesPerView: 1,
+             spaceBetweenSlides: 0
+           },
+           767: {
+             slidesPerView: 2,
+             spaceBetweenSlides: 0
+           },
+           980: {
+             slidesPerView: 3,
+             spaceBetweenSlides: 0
+           },
+           1200: {
+             slidesPerView: 4,
              spaceBetweenSlides: 0
            },
            1400: {
@@ -66,6 +111,38 @@ $(document).ready(function () {
     });
 
 
+
+    // менят поряок селекторов в фильтрах Отделений
+    reArrangeDom();
+
+
+
+
+    // open breadcrumbs second list
+    $(".js-open-menu-lvl2").click(function() {
+        if ($(this).hasClass("is-opened")) {
+            $(".breadcrumbs_list__second_lvl").slideUp("fast");
+            $(this).removeClass("is-opened");
+        }
+        else {
+            $(".breadcrumbs_list__second_lvl").slideDown("fast");
+            $(this).addClass("is-opened");
+        }
+    });
+
+    
+
+    // open deretions list
+    $(".js-open-deretions-list").click(function() {
+        if ($(this).hasClass("is-opened")) {
+            $(".decretions_selector_list").slideUp("fast");
+            $(this).removeClass("is-opened");
+        }
+        else {
+            $(".decretions_selector_list").slideDown("fast");
+            $(this).addClass("is-opened");
+        }
+    });
 
     // open mobile menu
     $(".js-open-mobile-menu").click(function() {
@@ -132,8 +209,8 @@ $(document).ready(function () {
 
 function fixArrowsHeight() {
     var h = $(".info_tip img").height();
-    $(".info-tips-slider .swiper-button-prev").height(h);
-    $(".info-tips-slider .swiper-button-next").height(h);
+    $(".info_tip-button-next").height(h);
+    $(".info_tip-button-prev").height(h);
 }
 
 function setPaginationPos() {
@@ -150,5 +227,19 @@ function setPaginationPos() {
 
 $(window).resize(function() {
     setPaginationPos();
+    reArrangeDom();
     setTimeout(function() { fixArrowsHeight() }, 500);
 })
+
+
+function reArrangeDom() {
+    if ( $(".decretions_selector_list") != 0) {
+    var decList = $(".decretions_selector_list");
+    if ($(window).width() > 767) {
+      decList.appendTo($(".navigation .container"));
+    }
+    else {
+      decList.before($(".derection_selector"))
+    }
+  }
+}

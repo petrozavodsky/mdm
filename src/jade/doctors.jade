@@ -1,0 +1,115 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+        
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2") Отделения и центры
+            .breadcrumbs_list__second_lvl
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+        section.page_headline
+            .container
+                h1 Врачи
+                p.page_headline__text В Международной клинике MEDEM широко представлены все клинические направления современной медицины, позволяющие осуществлять комплексное обслуживание пациентов в следующих отделениях:
+
+        section.navigation
+            .container
+                .derection_selector.js-open-deretions-list
+                    | отделения
+
+                .decretions_selector_list
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+                    a(href="#") Компьютерная томография
+
+                .search_box
+                    form(action="#" class="search_box__form")
+                        input( class="search_box__input" type="text" placeholder="по ключевому слову")
+                        input( class="search_box__submit" type="submit")
+
+        // section doctors
+        section.doctors_list
+            .container
+
+                .doctors_list__grid
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+                    a(href="#").doctors_list__item
+                        img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                        p.doctors_list__name Фамилия Имя Отчество
+                        span.doctors_list__spec Гастроэнтерология
+
+
+ 
+        include blocks/section_news.jade
+
+        include parts/_footer.jade
