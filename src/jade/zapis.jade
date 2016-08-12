@@ -1,0 +1,118 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+        
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2") Услуги и цены
+            .breadcrumbs_list__second_lvl
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+
+        section.section_appointment
+            .container
+                h1 Запиcь на прием
+                p.section_appointment_header 
+                    | Клиника MEDEM ведут приём пациентов по предварительной  записи. 
+                    br
+                    | Сервис «Запись на приём» позволяет самостоятельно подобрать удобное для визита время.
+                
+
+
+                form(action="" class="big_appointment_form")
+
+                    .form_line.blue
+
+                    p.form_textline
+                        i * 
+                        | Поля, обязательные для заполнения
+
+                    .baf_container
+
+                        .baf_half
+
+                            label.mdm_input 
+                                span Фамилия, имя, отчество 
+                                    i *
+                                input.mdm_input(type="text" id="" required)
+
+                            .baf_quarter
+
+                                label.mdm_input 
+                                    span Контактный телефон 
+                                        i *
+                                    input.mdm_input(type="text" id="" required)
+
+
+                            .baf_quarter
+
+                                label.mdm_input 
+                                    span E-mail
+                                    input.mdm_input(type="text" id="")
+
+
+
+                        .baf_half
+
+                            label.mdm_input 
+                                span Причина обращения
+                                textarea.mdm_textarea(id="")
+
+
+                    .form_line
+
+                    p.form_textline
+                        | Защита от автоматического заполнения:
+
+                    .baf_container
+
+
+
+                        .baf_half
+
+                            
+
+                            .captcha
+                                img(src="i/captcha.jpg", alt="")
+
+                                label.mdm_input.captcha_input
+                                    span Введите символы с картинки 
+                                        i *
+                                    input.mdm_input(type="text" id="" required)
+
+                        .baf_half
+                            label.mdm_submit
+                                span.mdm_submit_arr
+                                input(type="submit" id="" value="Отправить")
+
+
+                    .zapis_banner
+                        .zapis_banner_content
+                            | Наши сотрудники свяжутся с Вами в ближайшее время (с 09:00 по 21:00) и запишут Вас на приём.
+
+
+
+       
+
+
+
+        
+
+        include parts/_footer.jade
