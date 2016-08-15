@@ -25,7 +25,7 @@ $(document).ready(function () {
        nextButton: '.info_tip-button-next',
        prevButton: '.info_tip-button-prev',
        slidesPerView: 3,
-       spaceBetween: 10,
+       spaceBetween: 8,
        breakpoints: {
            // when window width is <= 320px
            767: {
@@ -42,8 +42,8 @@ $(document).ready(function () {
        paginationClickable: true,
        nextButton: '.doctors_list-button-next',
        prevButton: '.doctors_list-button-prev',
-       slidesPerView: 4,
-       spaceBetween: 10,
+       slidesPerView: 5,
+       spaceBetween: 20,
        breakpoints: {
            // when window width is <= 320px
            480: {
@@ -64,7 +64,7 @@ $(document).ready(function () {
            },
            1400: {
              slidesPerView: 5,
-             spaceBetweenSlides: 0
+             spaceBetween: 20
            }
         }
     });
@@ -76,7 +76,7 @@ $(document).ready(function () {
        nextButton: '.derections_list-button-next',
        prevButton: '.derections_list-button-prev',
        slidesPerView: 4,
-       spaceBetween: 10,
+       spaceBetween: 8,
        breakpoints: {
            // when window width is <= 320px
            480: {
