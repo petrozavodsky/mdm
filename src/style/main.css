@@ -697,12 +697,13 @@
 		max-width: 1580px;
 	}
 
-	.container {
+	& > .container {
 		margin: 0;
 		width: 100%;
 
 		@media (--w1600) {
 			padding: 0;
+			max-width: 1580px;
 		}
 
 	}
@@ -726,27 +727,46 @@
 	}
 
 	.swiper-pagination-bullet {
-		width: 18px;
-		height: 18px;
-		background-color: $blue;
-		border: 3px solid #fff;
-		opacity: 1;
-		margin: 0 7px;
+		width: 25px;
+		height: 25px;
+		margin: 0 11px;
+		position: relative;
+		opacity: 1 !important;
+		background: none;
+
+
+		&:before {
+			content: '';
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background-color: #404040;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+
+
+		&:after {
+			content: '';
+			width: 20px;
+			height: 1px;
+			background: url(../i/slider_dots.png) 0 0 repeat-x;
+			position: absolute;
+			top: 12px;
+			right: -15px;
+		}
+
+		&:last-child:after {
+			content: none;
+		}
+
+
 	}
 
 	.swiper-pagination-bullet-active {
 		position: relative;
-
-		&:before {
-			content: '';
-			width: 8px;
-			height: 8px;
-			border-radius: 50%;
-			background-color: #fff;
-			position: absolute;
-			top: 2px;
-			left: 2px;
-		}
+		background-color: rgba(105, 172, 229, 0.35);		
 	}
 
 	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -772,8 +792,12 @@
 	background-color: $blue;
 	z-index: 1;
 
+
 	.container {
 		padding-left: 30px;
+		height: 100%;
+		display:flex;
+		align-items:center;
 
 		@media (--w980) {
 			position: absolute;
@@ -785,8 +809,8 @@
 		}
 
 		@media (--w1400) {
-			padding-left: 30px;
-			margin: 0 -25px;	
+			padding-left: 70px;
+			margin: 0;	
 		}
 	}
 
@@ -1806,7 +1830,11 @@
 */
 
 .derections_list {
-	margin-top: 10px;
+	margin-top: 6px;
+
+	.container {
+		margin: 0;
+	}
 }
 
 .derections_list__grid {
@@ -1843,6 +1871,7 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
+	width: 100%;
 }
 
 .derections_list__spec {
@@ -1865,6 +1894,51 @@
 	align-items:center;
 }
 
+.derections_list-button-next,
+.derections_list-button-prev {
+	width: 50px;
+	background-color: #fff;
+	height: 100%;
+	top: 0;
+	margin-top: 0;
+	display: none;
+	
+	@media (--w1025) {
+		display: block;
+	}
+}
+
+.derections_list-button-next {
+	right: -25px;
+	background-image: svg("arr_r", "[stroke]: $blue");
+	background-position: center center;
+	background-size: 16px;
+	background-repeat: no-repeat;
+
+	@media (--w1025) {
+		right: 29px;
+	}
+}
+
+.derections_list-button-prev {
+	left: -25px;
+	background-image: svg("arr_l", "[stroke]: $blue");
+	background-position: center center;
+	background-size: 16px;
+	background-repeat: no-repeat;
+
+	@media (--w1025) {
+		left: 29px;
+	}
+}
+
+.js-derections-slider {
+	
+
+	@media (--w1025) {
+		padding: 0 50px;
+	}
+}
 
 
 /*

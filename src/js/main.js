@@ -80,24 +80,19 @@ $(document).ready(function () {
        breakpoints: {
            // when window width is <= 320px
            480: {
-             slidesPerView: 1,
-             spaceBetweenSlides: 0
+             slidesPerView: 1
            },
-           767: {
-             slidesPerView: 2,
-             spaceBetweenSlides: 0
+           733: {
+             slidesPerView: 2
            },
-           980: {
-             slidesPerView: 3,
-             spaceBetweenSlides: 0
+           1024: {
+             slidesPerView: 3
            },
-           1200: {
-             slidesPerView: 4,
-             spaceBetweenSlides: 0
+           1210: {
+             slidesPerView: 3
            },
            1400: {
-             slidesPerView: 5,
-             spaceBetweenSlides: 0
+             slidesPerView: 4
            }
         }
     });
