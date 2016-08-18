@@ -1833,7 +1833,16 @@
 	margin-top: 6px;
 
 	.container {
-		margin: 0;
+		@media (--w1200) {
+			padding: 0;
+		}
+	}
+
+	& > .container {
+		@media (--w1400) {
+			width: 1580px;
+			max-width: 1580px;
+		}
 	}
 }
 
@@ -1906,6 +1915,8 @@
 	@media (--w1025) {
 		display: block;
 	}
+
+	
 }
 
 .derections_list-button-next {
@@ -1918,6 +1929,10 @@
 	@media (--w1025) {
 		right: 29px;
 	}
+
+	@media (--w1400) {
+		right: 0 !important;
+	}
 }
 
 .derections_list-button-prev {
@@ -1929,6 +1944,10 @@
 
 	@media (--w1025) {
 		left: 29px;
+	}
+
+	@media (--w1400) {
+		left: 0 !important;
 	}
 }
 
