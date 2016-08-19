@@ -48,23 +48,18 @@ $(document).ready(function () {
            // when window width is <= 320px
            480: {
              slidesPerView: 1,
-             spaceBetweenSlides: 0
            },
            767: {
              slidesPerView: 2,
-             spaceBetweenSlides: 0
            },
            980: {
              slidesPerView: 3,
-             spaceBetweenSlides: 0
            },
            1200: {
-             slidesPerView: 4,
-             spaceBetweenSlides: 0
+             slidesPerView: 3,
            },
-           1400: {
-             slidesPerView: 5,
-             spaceBetween: 20
+           1600: {
+             slidesPerView: 4,
            }
         }
     });
@@ -91,8 +86,8 @@ $(document).ready(function () {
            1210: {
              slidesPerView: 3
            },
-           1400: {
-             slidesPerView: 4
+           1600: {
+             slidesPerView: 3
            }
         }
     });

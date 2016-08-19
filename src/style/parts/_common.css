@@ -16,23 +16,27 @@
 
 	@media (--w980) {
 	  min-width: 980px;
-	  max-width: 1170px;
+	  max-width: 1024px;
 	  width: auto;
 	  padding: 0 30px;
+	}
+
+	@media (--w1025) {
+		width: auto;
+		min-width: 930px;
+		max-width: 930px;
 	}
 
 	@media (--w1200) {
-	  min-width: 1170px;
-	  max-width: 1340px;
-	  width: auto;
-	  padding: 0 30px;
+	 	width: auto;
+		min-width: 930px;
+		max-width: 930px;
 	}
 
 	@media (--w1400) {
-	  min-width: 1340px;
-	  max-width: 1530px;
-	  width: auto;
-	  padding: 0 30px;
+	  	width: auto;
+		min-width: 930px;
+		max-width: 930px;
 	}
 
 	@media (--w1600) {
