@@ -1,0 +1,145 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+        
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2") Акции
+            .breadcrumbs_list__second_lvl
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+
+
+        section.section_feedback
+            .container
+            
+                 .feedback_block
+
+                    .feedback_list
+
+                        h2 Отзывы пациентов
+
+                        .form_line.blue
+
+                        .feedback_list__item
+                            span.feedback_list__date 01.07.2015
+                            h3.feedback_list__title Эльвира Balážiová, Kolárovo, Словакия
+                            p Дорогой клиника МЕДЕМ.
+                                br
+                                | Я была протестирована на вашей клиники на 1.7.2016 после аварии. Для ваших услуг, которые должны были мое полное удовлетворение и благодарность выходит traumatológovi Doctorovi Minasjanovi спасибо. Его профессиональные и этические отношения был образцовым. 
+                                br
+                                | Пожалуйста, передайте ему мои поздравления и благодарность. 
+
+                        .form_line.blue
+
+                        .feedback_list__item
+                            span.feedback_list__date 01.07.2015
+                            h3.feedback_list__title Эльвира Balážiová, Kolárovo, Словакия
+                            p Дорогой клиника МЕДЕМ.
+                                br
+                                | Я была протестирована на вашей клиники на 1.7.2016 после аварии. Для ваших услуг, которые должны были мое полное удовлетворение и благодарность выходит traumatológovi Doctorovi Minasjanovi спасибо. Его профессиональные и этические отношения был образцовым. 
+                                br
+                                | Пожалуйста, передайте ему мои поздравления и благодарность.
+
+                        .form_line.blue
+
+                        .feedback_list__item
+                            span.feedback_list__date 01.07.2015
+                            h3.feedback_list__title Эльвира Balážiová, Kolárovo, Словакия
+                            p Дорогой клиника МЕДЕМ.
+                                br
+                                | Я была протестирована на вашей клиники на 1.7.2016 после аварии. Для ваших услуг, которые должны были мое полное удовлетворение и благодарность выходит traumatológovi Doctorovi Minasjanovi спасибо. Его профессиональные и этические отношения был образцовым. 
+                                br
+                                | Пожалуйста, передайте ему мои поздравления и благодарность.
+
+                        .form_line.blue
+
+                        .feedback_list__item
+                            span.feedback_list__date 01.07.2015
+                            h3.feedback_list__title Эльвира Balážiová, Kolárovo, Словакия
+                            p Дорогой клиника МЕДЕМ.
+                                br
+                                | Я была протестирована на вашей клиники на 1.7.2016 после аварии. Для ваших услуг, которые должны были мое полное удовлетворение и благодарность выходит traumatológovi Doctorovi Minasjanovi спасибо. Его профессиональные и этические отношения был образцовым. 
+                                br
+                                | Пожалуйста, передайте ему мои поздравления и благодарность.
+
+                        .form_line.blue
+
+
+
+
+
+                        include blocks/pager.jade
+
+
+
+
+
+                    .feedback_reply
+
+                        form(action="" class="mdm_form feedback_form")
+
+                            h2 Запись на приём
+
+                            .form_line.blue
+
+                            p.form_textline
+                                i * 
+                                | Поля, обязательные для заполнения
+
+                            label.mdm_input 
+                                span Фамилия, имя, отчество 
+                                    i *
+                                input.mdm_input.error(type="text" id="" required)
+
+                            p.form_error Сообщение об ошибке!
+
+                            label.mdm_input 
+                                span Контактный телефон 
+                                    i *
+                                input.mdm_input(type="text" id="" required)
+
+                            label.mdm_input 
+                                span E-mail 
+                                input.mdm_input(type="text" id="")
+
+                            .form_line
+
+                            p.form_textline Защита от автоматического заполнения:
+
+                            .captcha
+                                img(src="i/captcha.jpg", alt="")
+
+                                label.mdm_input.captcha_input
+                                    span Введите символы с картинки 
+                                        i *
+                                    input.mdm_input(type="text" id="" required)
+
+                            label.mdm_submit
+                                span.mdm_submit_arr
+                                input(type="submit" id="" value="Отправить")
+                    
+
+
+
+
+        
+
+        include parts/_footer.jade

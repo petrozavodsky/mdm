@@ -40,7 +40,8 @@
 	}
 
 	@media (--w1600) {
-	  width: 1530px;
+	  width: 1480px;
+	  max-width: 1480px;
 	}
 }
 
