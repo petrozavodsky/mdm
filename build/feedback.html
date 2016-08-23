@@ -43,7 +43,7 @@
 					<a href="/"><img src="i/logo.png" alt="" class="logo"></a>
 					<div class="mobile_hr t2"></div>
 					<div class="mobile_menu js-open-mobile-menu"></div>
-					<nav class="main_menu"><a href="#" class="active">О клинике</a><a href="#">Отделения и центры</a><a href="#">Врачи</a><a href="#">Услуги и цены</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></nav>
+					<nav class="main_menu"><a href="#">О клинике</a><a href="#">Отделения и центры</a><a href="#">Врачи</a><a href="#">Услуги и цены</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></nav>
 					<div class="mob_search_block">
 						<input type="text">
 					</div>
@@ -54,52 +54,65 @@
 			<div class="container">
 				<ul class="breadcrumbs_list">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#" data-submenu="feedback" class="lvl2_menu js-open-menu-lvl2">Отзывы</a></li>
-					<li><a href="#" data-submenu="feedbacktwo" class="lvl2_menu js-open-menu-lvl2">Второйуровень</a></li>
+					<li><a href="#" class="lvl2_menu js-open-menu-lvl2">Услуги и цены</a></li>
 				</ul>
 			</div>
-			<div data-submenu="feedback" class="breadcrumbs_list__second_lvl">
+			<div class="breadcrumbs_list__second_lvl">
 				<div class="container"><a href="#">О КЛИНИКЕ</a><a href="#">ОТДЕЛЕНИЯ И ЦЕНТРЫ</a><a href="#">ВРАЧИ</a><a href="#">УСЛУГИ И ЦЕНЫ</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></div>
 			</div>
-			<div data-submenu="feedbacktwo" class="breadcrumbs_list__second_lvl">
-				<div class="container"><a href="#">О КЛИНИКЕ 2</a><a href="#">ОТДЕЛЕНИЯ И ЦЕНТРЫ 2</a><a href="#">ВРАЧИ 2</a><a href="#">УСЛУГИ И ЦЕНЫ 2</a><a href="#">НОВОСТИ 2</a><a href="#">КОНТАКТЫ 2</a></div>
-			</div>
 		</nav>
-		<section class="page_headline">
+		<section class="section_appointment">
 			<div class="container">
-				<h1>Контакты</h1>
-				<p class="page_headline__text">Международная клиника MEDEM — это многопрофильное лечебное учреждение, предоставляющее широкий спектр высокоспециализированных медицинских услуг и уникальную возможность решить большинство проблем со здоровьем в одном учреждении.</p>
-			</div>
-		</section>
-		<!-- contacts-->
-		<section class="contacts">
-			<div class="container">
-				<div class="contacts_block">
-					<div class="contacts_left">
-						<div class="contacts_map"></div>
-					</div>
-					<div class="contacts_right">
-						<div class="contacts_panel">
-							<h3>АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</h3>
-							<p>Наш сервис дает возможность позвонить с компьютера бесплатно на сотовые или стационарные телефоны людей, проживающих в самых разных странах.</p><a href="#" class="showmore">подробнее</a>
+				<h1>Запиcь на прием</h1>
+				<p class="section_appointment_header">
+
+					Клиника MEDEM ведут приём пациентов по предварительной записи. <br>Сервис «Запись на приём» позволяет самостоятельно подобрать удобное для визита время.
+				</p>
+				<form action="" class="big_appointment_form">
+					<div class="form_line blue"></div>
+					<p class="form_textline"><i>* </i>Поля, обязательные для заполнения</p>
+					<div class="baf_container">
+						<div class="baf_half">
+							<label class="mdm_input"> <span>Фамилия, имя, отчество <i>*</i></span>
+                <input type="text" id="" required class="mdm_input">
+              </label>
+							<div class="baf_quarter">
+								<label class="mdm_input"> <span>Контактный телефон <i>*</i></span>
+                  <input type="text" id="" required class="mdm_input">
+                </label>
+							</div>
+							<div class="baf_quarter">
+								<label class="mdm_input"> <span>E-mail</span>
+                  <input type="text" id="" class="mdm_input">
+                </label>
+							</div>
 						</div>
-						<div class="contacts_panel">
-							<h3>Запись на прием</h3>
-							<p>Клиника MEDEM ведут приём пациентов по предварительной записи. Сервис «Запись на приём» позволяет самостоятельно подобрать удобное для визита время.</p><a href="#" class="showmore">записаться</a>
+						<div class="baf_half">
+							<label class="mdm_input"> <span>Причина обращения</span>
+                <textarea id="" class="mdm_textarea"></textarea>
+              </label>
 						</div>
 					</div>
-				</div>
-			</div>
-		</section>
-		<section class="contacts_info">
-			<div class="container">
-				<h2>Международная клиника MEDEM</h2>
-				<div class="form_line blue"></div>
-				<div class="contacts_info__text">
-					<p>Санкт-Петербург, улица Марата, 6<br>Район - Центральный</p>
-					<p style="color: #69ace5;">+7 (812) 336-33-33 - общий телефон<br>+7 (812) 336-33-36 - скорая и неотложная помощь</p>
-					<p>Время работы: круглосуточно, семь дней в неделю. </p><a href="mailto:info@medem.ru" target="_blank">info@medem.ru</a>
-				</div>
+					<div class="form_line"></div>
+					<p class="form_textline">Защита от автоматического заполнения:</p>
+					<div class="baf_container">
+						<div class="baf_half">
+							<div class="captcha"><img src="i/captcha.jpg" alt="">
+								<label class="mdm_input captcha_input"><span>Введите символы с картинки <i>*</i></span>
+                  <input type="text" id="" required class="mdm_input">
+                </label>
+							</div>
+						</div>
+						<div class="baf_half">
+							<label class="mdm_submit"><span class="mdm_submit_arr"></span>
+                <input type="submit" id="" value="Отправить">
+              </label>
+						</div>
+					</div>
+					<div class="zapis_banner">
+						<div class="zapis_banner_content">Наши сотрудники свяжутся с Вами в ближайшее время (с 09:00 по 21:00) и запишут Вас на приём.</div>
+					</div>
+				</form>
 			</div>
 		</section>
 		<!-- footer-->

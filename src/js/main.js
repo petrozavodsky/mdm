@@ -149,13 +149,27 @@ $(document).ready(function () {
 
 
     // open breadcrumbs second list
-    $(".js-open-menu-lvl2").click(function() {
+    $(".js-open-menu-lvl2").click(function(e) {
+      e.preventDefault();
+      var dataMenu = $(this).data("submenu");
+
         if ($(this).hasClass("is-opened")) {
-            $(".breadcrumbs_list__second_lvl").slideUp("fast");
+
+            $(".breadcrumbs_list__second_lvl").each(function() {
+              if ($(this).data("submenu") == dataMenu) {
+                $(this).slideUp("fast");
+              }
+            })
             $(this).removeClass("is-opened");
         }
         else {
-            $(".breadcrumbs_list__second_lvl").slideDown("fast");
+            $(".breadcrumbs_list__second_lvl").each(function() {
+              if ($(this).data("submenu") == dataMenu) {
+                $(".breadcrumbs_list__second_lvl").slideUp("fast");
+                 $(this).slideDown("fast");
+              }
+            })
+            
             $(this).addClass("is-opened");
         }
     });

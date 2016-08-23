@@ -7,14 +7,85 @@ html(lang='ru')
         
         include parts/_header.jade
 
+
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedback") Отзывы
+
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedbacktwo") Второйуровень
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedback")
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedbacktwo")
+                .container
+                    a(href="#") О КЛИНИКЕ 2
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ 2
+                    a(href="#") ВРАЧИ 2
+                    a(href="#") УСЛУГИ И ЦЕНЫ 2
+                    a(href="#") НОВОСТИ 2
+                    a(href="#") КОНТАКТЫ 2
+
+
+        section.page_headline
+            .container
+                h1 Контакты
+                p.page_headline__text Международная клиника MEDEM — это многопрофильное лечебное учреждение, предоставляющее широкий спектр высокоспециализированных медицинских услуг и уникальную возможность решить большинство проблем со здоровьем в одном учреждении.
+
         
         // contacts
         section.contacts
             .container
-                
-        // map
-        section.map
+
+                .contacts_block
+
+                    .contacts_left
+                        .contacts_map
+
+                    .contacts_right
+                        .contacts_panel
+                            h3 АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ
+                            p Наш сервис дает возможность позвонить с компьютера бесплатно на сотовые или стационарные телефоны людей, проживающих в самых разных странах.
+                            a(href="#").showmore подробнее
+
+                        .contacts_panel
+                            h3 Запись на прием
+                            p Клиника MEDEM ведут приём пациентов по предварительной записи. Сервис «Запись на приём» позволяет самостоятельно подобрать удобное для визита время.
+                            a(href="#").showmore записаться
+
+        section.contacts_info
             .container
-                #map
+
+                h2 Международная клиника MEDEM
+
+                .form_line.blue
+
+                .contacts_info__text
+
+                    p Санкт-Петербург, улица Марата, 6
+                        br
+                        | Район - Центральный
+
+                    p(style="color: #69ace5;") +7 (812) 336-33-33 - общий телефон
+                        br
+                        | +7 (812) 336-33-36 - скорая и неотложная помощь
+                    p Время работы: круглосуточно, семь дней в неделю. 
+
+                    a(href="mailto:info@medem.ru" target="_blank") info@medem.ru
+
+
+
+        
       
         include parts/_footer.jade

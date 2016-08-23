@@ -43,7 +43,7 @@
 					<a href="/"><img src="i/logo.png" alt="" class="logo"></a>
 					<div class="mobile_hr t2"></div>
 					<div class="mobile_menu js-open-mobile-menu"></div>
-					<nav class="main_menu"><a href="#">О клинике</a><a href="#">Отделения и центры</a><a href="#">Врачи</a><a href="#">Услуги и цены</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></nav>
+					<nav class="main_menu"><a href="#" class="active">О клинике</a><a href="#">Отделения и центры</a><a href="#">Врачи</a><a href="#">Услуги и цены</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></nav>
 					<div class="mob_search_block">
 						<input type="text">
 					</div>
@@ -54,11 +54,15 @@
 			<div class="container">
 				<ul class="breadcrumbs_list">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#" class="lvl2_menu js-open-menu-lvl2">Акции</a></li>
+					<li><a href="#" data-submenu="feedback" class="lvl2_menu js-open-menu-lvl2">Отзывы</a></li>
+					<li><a href="#" data-submenu="feedbacktwo" class="lvl2_menu js-open-menu-lvl2">Второйуровень</a></li>
 				</ul>
 			</div>
-			<div class="breadcrumbs_list__second_lvl">
+			<div data-submenu="feedback" class="breadcrumbs_list__second_lvl">
 				<div class="container"><a href="#">О КЛИНИКЕ</a><a href="#">ОТДЕЛЕНИЯ И ЦЕНТРЫ</a><a href="#">ВРАЧИ</a><a href="#">УСЛУГИ И ЦЕНЫ</a><a href="#">НОВОСТИ</a><a href="#">КОНТАКТЫ</a></div>
+			</div>
+			<div data-submenu="feedbacktwo" class="breadcrumbs_list__second_lvl">
+				<div class="container"><a href="#">О КЛИНИКЕ 2</a><a href="#">ОТДЕЛЕНИЯ И ЦЕНТРЫ 2</a><a href="#">ВРАЧИ 2</a><a href="#">УСЛУГИ И ЦЕНЫ 2</a><a href="#">НОВОСТИ 2</a><a href="#">КОНТАКТЫ 2</a></div>
 			</div>
 		</nav>
 		<section class="section_feedback">
@@ -96,7 +100,9 @@
 						<form action="" class="mdm_form feedback_form">
 							<h2>Запись на приём</h2>
 							<div class="form_line blue"></div>
-							<p class="form_textline"><i>* </i>Поля, обязательные для заполнения</p>
+							<label class="mdm_input"> <span>Текст отзыва<i>*</i></span>
+                <textarea id="" class="mdm_textarea"></textarea>
+              </label>
 							<label class="mdm_input"> <span>Фамилия, имя, отчество <i>*</i></span>
                 <input type="text" id="" required class="mdm_input error">
               </label>
@@ -107,6 +113,7 @@
 							<label class="mdm_input"> <span>E-mail </span>
                 <input type="text" id="" class="mdm_input">
               </label>
+							<p class="mdm_undertext">Адрес используется для связи с Вами</p>
 							<div class="form_line"></div>
 							<p class="form_textline">Защита от автоматического заполнения:</p>
 							<div class="captcha"><img src="i/captcha.jpg" alt="">
@@ -117,6 +124,7 @@
 							<label class="mdm_submit"><span class="mdm_submit_arr"></span>
                 <input type="submit" id="" value="Отправить">
               </label>
+							<p class="form_textline"><i>* </i>Поля, обязательные для заполнения</p>
 						</form>
 					</div>
 				</div>

@@ -1,0 +1,106 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedback") Отзывы
+
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedbacktwo") Второйуровень
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedback")
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedbacktwo")
+                .container
+                    a(href="#") О КЛИНИКЕ 2
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ 2
+                    a(href="#") ВРАЧИ 2
+                    a(href="#") УСЛУГИ И ЦЕНЫ 2
+                    a(href="#") НОВОСТИ 2
+                    a(href="#") КОНТАКТЫ 2
+
+
+        section.page_headline
+            .container
+                h1 УСЛУГИ И ЦЕНЫ ООО «Международной клиники MEDEM»
+                p.page_headline__text Указанные в прейскуранте цены действительны на июнь 2015.
+                    br
+                    | Актуальные цены услуг Вы можете уточнить по телефону +7 (812) 336 33 33
+
+        
+        section.price
+            .container
+
+                .price_block
+                    h2 Консультации врачей в Клинике
+                    .price_item
+                        .price_item__art 101045*
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+
+                    p.nb * - скидки на данные услуги не распространяются
+
+                .form_line.blue
+
+                .price_block
+                    h2 Консультации врачей в Клинике
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+
+                .price_block
+                    h2 Консультации врачей в Клинике
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+                    .price_item
+                        .price_item__art 101045
+                        .price_item__name Консультация врача в рамках программы обследования и лечения
+                        .price_item__cost 16 200.00 руб.
+        
+
+
+
+        
+      
+        include parts/_footer.jade

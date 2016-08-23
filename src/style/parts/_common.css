@@ -51,6 +51,8 @@
 	line-height: 37px;
 	margin-bottom: 10px;
 	color: $blue;
+	opacity: 1;
+	transition: opacity 0.2s;
 
 	&:before {
 		content: "";
@@ -65,16 +67,29 @@
 		background-size: 10px;
 		background-repeat: no-repeat;
 		vertical-align: top;
+		opacity: 1;
+		transition: margin 0.3s, opacity 0.3s;
+		
 	}
 
 	.footer &,
-	.big_slider & {
+	.big_slider &,
+	.contacts_panel & {
 		color: #fff;
 
 		&:before {
 			background-image: svg("arr_r", "[stroke]: $blue");
 			background-color: #fff;
 		}
+	}
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:hover:before  {
+		margin-right: 15px;
+		opacity: 0.9;
 	}
 }
 
