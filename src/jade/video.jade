@@ -1,0 +1,90 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedback") О клинике
+
+                    li
+                        a(href="#") Видео
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedback")
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+        section.page_headline
+            .container
+                h1 Видео
+                p.page_headline__text В Международной клинике MEDEM широко представлены все клинические направления современной медицины, позволяющие осуществлять комплексное обслуживание пациентов в следующих отделениях:
+
+        // video
+        section.video_list
+            .container
+
+                .video_list__grid
+
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+     
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+                    a(href="#").video_list__item
+                        .video_list__pic
+                            img(src="i/derection_list__item.jpg" alt="")
+                            .video_icon
+                        h2 ВИДЕО #1 НАЗВАНИЕ
+                        span(class="video_list__title") Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств. 
+
+ 
+        include blocks/section_news.jade
+
+        include parts/_footer.jade

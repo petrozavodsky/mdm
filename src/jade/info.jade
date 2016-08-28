@@ -1,0 +1,105 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+
+
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedback") О клинике
+
+                    li
+                        a(href="#") Видео
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedback")
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+        // video
+        section.info_section
+            .container
+
+                .info_content
+
+                    h1 Информация для потребителей
+                    p «ООО «Международная клиника MEDEM» включена в Реестр медицинских организаций, осуществляющих деятельность в сфере обязательного медицинского страхования на территории Санкт-Петербурга на 2016 год. Виды медицинской помощи, оказываемой в рамках территориальной программы обязательного медицинского страхования – специализированная медицинская помощь (КТ, МРТ). 
+
+                    h3 Комитет по здравоохранению при Правительстве Санкт-Петербурга:
+                    p Адрес: 191023, Санкт-Петербург, ул. Малая Садовая, д.1
+                        br
+                        | Телефон: +7(812)314-04-43 
+
+                    h3 Федеральная служба по надзору в сфере здравоохранения по Санкт-Петербургу и Ленинградской области:
+                    p Адрес: 190068, Санкт-Петербург, наб.кан. Грибоедова 88-90
+                        br
+                        | Телефон: +7(812)314-67-89 - приемная 
+
+
+                    h3 Управление Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по городу Санкт-Петербургу
+                    p Адрес: 191025, г. Санкт-Петербург, ул. Стремянная, д. 19 
+                        br
+                        | Территориальный отдел Управления Роспотребнадзора по Санкт-Петербургу в Адмиралтейском, Василеостровском и Центральном районах 
+                        br
+                        | 190005, Санкт-Петербург, ул. 3-я Красноармейская, д. 18
+                        br
+                        | Телефон: +7(812)316-18-71,+7(812)764-42-38
+
+
+                        
+            .accordion
+                .container
+                    .accordion__title
+                        | Click me!
+                    .accordion__content
+                        .info_content
+                            p dfsdfsdfsd
+                            br
+                            b sdfsdf sdf sd
+                            br
+                            p sdfsdfsd
+                                a(href="#") sfsdfsdf
+
+
+            .accordion
+                .container
+                    .accordion__title
+                        | Click me!
+                    .accordion__content
+                        .info_content
+                            p dfsdfsdfsd
+                            br
+                            b sdfsdf sdf sd
+                            br
+                            p sdfsdfsd
+                                a(href="#") sfsdfsdf
+
+
+            .accordion
+                .container
+                    .accordion__title
+                        | Click me!
+                    .accordion__content
+                        .info_content
+                            p dfsdfsdfsd
+                            br
+                            b sdfsdf sdf sd
+                            br
+                            p sdfsdfsd
+                                a(href="#") sfsdfsdf
+
+
+        include parts/_footer.jade

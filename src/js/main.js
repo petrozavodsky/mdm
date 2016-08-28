@@ -106,6 +106,54 @@ $(document).ready(function () {
     reArrangeDom();
 
 
+    // подгоняет размер карты
+    fixMapHeight() 
+
+    function fixMapHeight() {
+      var mapHeight = $(".contacts_right").height();
+      if ($(window).width() > 979) {
+        $(".contacts_map").css({height: mapHeight});
+      }
+      else {
+        $(".contacts_map").css({height: 400});
+      }
+    }
+
+
+
+    $(".accordion__title").click(function() {
+      var accordionContent = $(this).parent().find(".accordion__content");
+      if ($(this).hasClass("is-opened")) {
+        accordionContent.slideUp(); 
+        $(this).removeClass("is-opened");
+      }
+      else {
+        accordionContent.slideDown();
+        $(this).addClass("is-opened");
+      }
+    });
+
+
+    fixNewsHeight();
+
+    function fixNewsHeight() {
+      if ($(window).width() >= 980) {
+        $(".news_tizer_row").each(function() {
+          var thisHeight = $(this).height();
+          $(this).children(".news_tizer_one").css({height: thisHeight});
+        })
+      }
+    }
+
+    
+    
+    
+
+    
+
+    
+
+
 
     if ( $(".mdm_input") != 0) {
       $(".mdm_input input").focus(function() {
@@ -201,7 +249,7 @@ $(document).ready(function () {
 
     setTimeout(function() { fixArrowsHeight() }, 500);
 
-    setPaginationPos()
+    setPaginationPos();
 
 
     // initialize map
@@ -272,6 +320,8 @@ function setPaginationPos() {
 $(window).resize(function() {
     setPaginationPos();
     reArrangeDom();
+    fixMapHeight();
+    fixNewsHeight();
     setTimeout(function() { fixArrowsHeight() }, 500);
 })
 
