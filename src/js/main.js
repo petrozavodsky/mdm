@@ -123,13 +123,13 @@ $(document).ready(function () {
 
     $(".accordion__title").click(function() {
       var accordionContent = $(this).parent().find(".accordion__content");
-      if ($(this).hasClass("is-opened")) {
+      if ($(this).parent().hasClass("is-opened")) {
         accordionContent.slideUp(); 
-        $(this).removeClass("is-opened");
+        $(this).parent().removeClass("is-opened");
       }
       else {
         accordionContent.slideDown();
-        $(this).addClass("is-opened");
+        $(this).parent().addClass("is-opened");
       }
     });
 
