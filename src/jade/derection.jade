@@ -1,0 +1,174 @@
+doctype html
+html(lang='ru')
+    head
+        include parts/_meta.jade
+
+    body
+        
+        include parts/_header.jade
+
+        nav.breadcrumbs
+            .container
+                ul.breadcrumbs_list
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#" class="lvl2_menu js-open-menu-lvl2" data-submenu="feedback") Отделения и центры
+
+                    li
+                        a(href="#") Анестезиология и реанимация
+
+            .breadcrumbs_list__second_lvl(data-submenu="feedback")
+                .container
+                    a(href="#") О КЛИНИКЕ
+                    a(href="#") ОТДЕЛЕНИЯ И ЦЕНТРЫ
+                    a(href="#") ВРАЧИ
+                    a(href="#") УСЛУГИ И ЦЕНЫ
+                    a(href="#") НОВОСТИ
+                    a(href="#") КОНТАКТЫ
+
+        section.page_headline
+            .container
+                h1 Анестезиология и реанимация
+                p.page_headline__text В Международной клинике MEDEM широко представлены все клинические направления современной медицины, позволяющие осуществлять комплексное обслуживание пациентов в следующих отделениях:
+
+        // derection
+        section.derection
+            .container
+            
+                .one_derection
+                    .one_derection__left
+                        img(src="i/one_derection.jpg", alt="")
+                    
+                    .one_derection__right
+                        
+                        h2 Анестезиология, реанимация и интенсивная терапия
+                        p Отделение анестезиологии, реанимации и интенсивной терапии обеспечивает работу в трех операционных, где проводятся все виды оперативных вмешательств по общей хирургии, урологии, гинекологии, оториноларингологии, пластической хирургии, стоматологии, челюстно-лицевой хирургии. Врачи отделения имеют большой опыт проведения анестезии у пациентов высокого риска.
+                        h3 Профессионально, квалифицированно, компетентно.
+                        p Для Вас по крупицам собрана сильнейшая команда анестезиологов-реаниматологов из лучших представителей Военно-медицинской Академии им. С.М. Кирова, Федерального центра сердца, крови и эндокринологии им. В.А. Алмазова, НИИ нейрохирургии им. А.Л. Поленова, НИИ детских инфекций ФМБА России, Всероссийского центра экстренной и радиационной медицины им. А.М. Никифорова МЧС России, Клинической больницы Российской академии наук.
+
+                .accordion
+                    .accordion__title
+                        | Врачи отделения
+                    .accordion__content
+                        
+                        .doctors_list__grid
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+
+                            a(href="#").doctors_list__item
+                                img(src="i/doctors_list__item.jpg" alt="" class="doctors_list__pic")
+                                p.doctors_list__name Фамилия Имя Отчество
+                                span.doctors_list__spec Гастроэнтерология
+                                
+                .accordion
+                    .accordion__title
+                        | Прейскурант отделения
+                    .accordion__content
+                        
+                        .price_block
+                            h2 Консультации врачей в Клинике
+                            .price_item
+                                .price_item__art 101045*
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+
+                            p.nb * - скидки на данные услуги не распространяются
+
+                        .price_block
+                            h2 Консультации врачей в Клинике
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+
+                        .price_block
+                            h2 Консультации врачей в Клинике
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                            .price_item
+                                .price_item__art 101045
+                                .price_item__name Консультация врача в рамках программы обследования и лечения
+                                .price_item__cost 16 200.00 руб.
+                
+                        
+
+                .accordion
+                    .accordion__title
+                        | Просто текст
+                    .accordion__content
+                        .service_shorts
+                            .service_shorts__half
+                                img(src="i/service_short1.jpg", alt="")
+                                .service_shorts__content
+                                    span 2 мая–30 июня 2016
+                                    h3 
+                                        a(href="#") −15% на плазмотерапию PRP
+                                    p Скидка 15% на ботокс для владельцев дисконтных карт МЕДЕМ действует дополнительная скидка.
+
+                            .service_shorts__half
+                                img(src="i/service_short1.jpg", alt="")
+                                .service_shorts__content
+                                    span 2 мая–30 июня 2016
+                                    h3 
+                                      a(href="#") −15% на плазмотерапию PRP
+                                    p Скидка 15% на ботокс для владельцев дисконтных карт МЕДЕМ действует дополнительная скидка.
+
+
+
+
+                        
+                
+                
+        
+
+ 
+        
+
+        include parts/_footer.jade

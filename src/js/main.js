@@ -107,7 +107,7 @@ $(document).ready(function () {
 
 
     // подгоняет размер карты
-    fixMapHeight() 
+    fixMapHeight()
 
     function fixMapHeight() {
       var mapHeight = $(".contacts_right").height();
@@ -124,7 +124,7 @@ $(document).ready(function () {
     $(".accordion__title").click(function() {
       var accordionContent = $(this).parent().find(".accordion__content");
       if ($(this).parent().hasClass("is-opened")) {
-        accordionContent.slideUp(); 
+        accordionContent.slideUp();
         $(this).parent().removeClass("is-opened");
       }
       else {
@@ -145,13 +145,13 @@ $(document).ready(function () {
       }
     }
 
-    
-    
-    
 
-    
 
-    
+
+
+
+
+
 
 
 
@@ -161,17 +161,21 @@ $(document).ready(function () {
       })
 
       $(".mdm_input input").blur(function() {
-        $(this).parent().children("span").show();
+        if ($(this).val() == "") {
+            $(this).parent().children("span").show();
+        }
       })
     }
 
     if ( $(".mdm_input") != 0) {
       $(".mdm_input textarea").focus(function() {
-        $(this).parent().children("span").hide();
+          $(this).parent().children("span").hide();
       })
 
       $(".mdm_input textarea").blur(function() {
-        $(this).parent().children("span").show();
+          if ($(this).val() == "") {
+            $(this).parent().children("span").show();
+        }
       })
     }
 
@@ -193,7 +197,7 @@ $(document).ready(function () {
 
     }
 
-    
+
 
 
     // open breadcrumbs second list
@@ -217,12 +221,12 @@ $(document).ready(function () {
                  $(this).slideDown("fast");
               }
             })
-            
+
             $(this).addClass("is-opened");
         }
     });
 
-    
+
 
     // open deretions list
     $(".js-open-deretions-list").click(function() {

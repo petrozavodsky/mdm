@@ -33,7 +33,7 @@
 	background-color: #fff;
 
 	.container {
-		position: static;
+		position: relative;
 		padding: 0;
 		margin: 0;
 
@@ -50,11 +50,14 @@
 }
 
 .lang_select {
-	display: none;
+	display: inline-block;
+	margin-right: -10px;
+	margin-left: 10px;
 
 	@media (--w768) {
-		display: inline-block;
-		margin-left: 15px;
+		position: absolute;
+		top: 0;
+		left: 10px;
 	}
 
 	@media (--w1025) {
@@ -721,7 +724,93 @@
 
 
 
+/*
+*	derection
+*/
 
+.one_derection {
+	lost-center: 100%;
+	lost-utility: clearfix;
+	margin-bottom: 30px;
+
+	.one_derection__left {
+		padding: 5px 0;
+		border-top: 1px solid $blue;
+		border-bottom: 1px solid $blue;
+
+		@media (--w768) {
+			lost-column: 1/2 2 10px no-flex;
+		}
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	.one_derection__right {
+		border-top: 1px solid $blue;
+		border-bottom: 1px solid $blue;
+		padding: 20px;
+
+		@media (--w768) {
+			lost-column: 1/2 2 10px no-flex;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: 600;
+			margin: 0 0 20px;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 24px;
+			font-weight: 600;
+			margin: 0 0 20px;
+			color: $blue;
+		}
+
+		h3 {
+			color: $blue;
+			font-size: 14px;
+			line-height: 17px;
+			margin-bottom: 5px;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			@media (--w768) {
+				margin-bottom: 10px;
+			}
+
+			@media (--w980) {
+				font-size: 16px;
+				line-height: 20px;
+				margin-bottom: 15px;
+				font-weight: 700;
+			}
+		}
+
+
+		p {
+			font-size: 14px;
+			line-height: 17px;
+			color: #808285;
+			font-weight: 300;
+			margin-bottom: 10px;
+
+			@media (--w768) {
+				min-height: 0;
+				margin-bottom: 26px;
+			}
+
+		}
+
+
+	}
+}
 
 
 
@@ -1289,9 +1378,16 @@
 		text-transform: uppercase;
 		font-size: 24px;
 		line-height: 24px;
-		color: $blue;
 		font-weight: 600;
 		margin: 0 0 10px;
+
+		a {
+			color: $blue;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 
 		@media (--w980) {
 			font-size: 34px;
@@ -1315,11 +1411,18 @@
     line-height: 48px;
     text-transform: uppercase;
     font-size: 16px;
-    color: #fff;
     width: 100%;
     background-color: $blue;
     font-weight: 600;
     margin: 7px 0;
+
+	a {
+		color: #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .service_shorts {
@@ -1392,9 +1495,16 @@
 	h3 {
 		text-transform: uppercase;
 		font-size: 16px;
-		color: $blue;
 		font-weight: 600;
 		margin: 0 0 10px;
+
+		a {
+			color: $blue;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 
 		@media (--w980) {
 			margin: 0 0 20px;
