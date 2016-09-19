@@ -4,9 +4,9 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/Swiper/dist/js/swiper.jquery.min.js
 //= ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
+//= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
 
 //|=== unkomment to use ===| //= ../../node_modules/nprogress/nprogress.js
-//|=== unkomment to use ===| //= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
 //|=== unkomment to use ===| //= ../../bower_components/jquery.scrollTo/jquery.scrollTo.min.js
 //|=== unkomment to use ===| //= ../../bower_components/Tabslet/jquery.tabslet.min.js
 //|=== unkomment to use ===| //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
@@ -110,14 +110,47 @@ $(document).ready(function () {
     fixMapHeight()
 
     function fixMapHeight() {
-      var mapHeight = $(".contacts_right").height();
-      if ($(window).width() > 979) {
-        $(".contacts_map").css({height: mapHeight});
-      }
-      else {
-        $(".contacts_map").css({height: 400});
+        if ($(".contacts_right").lenght() != 0) {
+          var mapHeight = $(".contacts_right").height();
+          if ($(window).width() > 979) {
+            $(".contacts_map").css({height: mapHeight});
+          }
+          else {
+            $(".contacts_map").css({height: 400});
+          }
       }
     }
+
+
+
+
+    function sticky_relocate() {
+      var window_top = $(window).scrollTop();
+      var winHeight = $(window).height();
+
+      if (window_top > 0)
+        $('.header').addClass('fixed')
+      else
+        $('.header').removeClass('fixed');
+    }
+
+    $(function() {
+        if ($(window).width() > 980) {
+            $(window).scroll(sticky_relocate);
+            sticky_relocate();
+        }
+    });
+
+
+
+
+    $('.popup-youtube').magnificPopup({
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
 
 
 
@@ -131,6 +164,7 @@ $(document).ready(function () {
         accordionContent.slideDown();
         $(this).parent().addClass("is-opened");
       }
+
     });
 
 
@@ -183,8 +217,6 @@ $(document).ready(function () {
     if ($(".news_tizer_big__pic") != 0) {
       var tH = $(".news_tizer_big__pic").height();
       var cH = $(".news_tizer_big__content").height();
-
-      console.log(tH, cH);
 
       if (tH > cH) {
         $(".news_tizer_big__content").css({minHeight: tH+2});
