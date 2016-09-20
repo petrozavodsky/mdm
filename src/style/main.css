@@ -46,6 +46,12 @@
 			}
 		}
 
+		.main_menu {
+			position: relative !important;
+			float: right;
+			margin-top: 18px;
+		}
+
 	}
 }
 
@@ -1635,19 +1641,20 @@
 }
 
 .forum_row {
-
+	display: table;
 	margin-bottom: 1px;
 	font-size: 0;
 	background-color: #f0f7fc;
 	font-size: 14px;
 	font-weight: 600;
-
+	width: 100%;
 
 	&.title {
 		background-color: $blue;
 
 		div {
 			color: #fff;
+			padding: 5px 0px 5px 4px;
 		}
 	}
 
@@ -1657,29 +1664,37 @@
 		color: #828282;
 		min-height: 28px;
 		padding: 5px 0px 5px 15px;
+		display: table-cell;
 	}
 
 	.forum_c1 {
 		width: 6%;
 		border-right: 1px solid #fff;
+		position: relative;
+			display: table-cell;
 	}
 	.forum_c2 {
 		width: 43%;
 		border-right: 1px solid #fff;
+			display: table-cell;
 	}
 	.forum_c3 {
 		width: 6%;
 		border-right: 1px solid #fff;
+			display: table-cell;
 	}
 	.forum_c4 {
 		width: 6%;
 		border-right: 1px solid #fff;
+			display: table-cell;
 	}
 	.forum_c5 {
 		width: 36%;
+			display: table-cell;
 
 		span {
 			float: right;
+			margin-right: 5px;
 		}
 	}
 
@@ -1692,7 +1707,12 @@
 	width: 23px;
 	height: 15px;
 	background: url(../i/forum_read.png) 0 0 no-repeat;
-	margin: 0 auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 
 	&.is-unread {
 		background: url(../i/forum_unread.png) 0 0 no-repeat;
@@ -2844,6 +2864,7 @@
 		height: 32px;
 		border: 1px solid #c0c0c0;
 		padding-left: 8px;
+		outline: none;
 	}
 
 	input[type="text"].error {
@@ -3615,6 +3636,9 @@
 .price_item {
 	font-size: 0;
 	margin: 0 -20px 1px;
+	text-decoration: none;
+	display: block;
+	color: #828282;
 
 	& > div {
 		display: inline-block;

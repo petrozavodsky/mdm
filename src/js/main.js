@@ -1,7 +1,6 @@
 /*
     Custom scripts
  */
-//= ../../bower_components/jquery/dist/jquery.min.js
 //= ../../bower_components/Swiper/dist/js/swiper.jquery.min.js
 //= ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 //= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
@@ -110,7 +109,7 @@ $(document).ready(function () {
     fixMapHeight()
 
     function fixMapHeight() {
-        if ($(".contacts_right").lenght() != 0) {
+        if ($(".contacts_right").lenght != 0) {
           var mapHeight = $(".contacts_right").height();
           if ($(window).width() > 979) {
             $(".contacts_map").css({height: mapHeight});
