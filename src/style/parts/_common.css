@@ -22,21 +22,22 @@
 	}
 
 	@media (--w1025) {
-		width: auto;
+
 		min-width: 930px;
 		max-width: 930px;
+		width: auto;
 	}
 
 	@media (--w1200) {
-	 	width: auto;
-		min-width: 1160px;
+		min-width: 930px;
 		max-width: 1160px;
+		width: auto;
 	}
 
 	@media (--w1400) {
-	  	width: auto;
-		min-width: 930px;
-		max-width: 930px;
+		min-width: 1160px;
+		max-width: 1400px;
+		width: auto;
 	}
 
 	@media (--w1600) {

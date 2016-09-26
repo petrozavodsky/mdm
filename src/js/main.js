@@ -162,6 +162,14 @@ $(document).ready(function () {
       else {
         accordionContent.slideDown();
         $(this).parent().addClass("is-opened");
+
+        setTimeout(function() {
+          $(".news_tizer_row").each(function() {
+            var thisHeight = $(this).height();
+            $(this).children(".news_tizer_one").css({height: thisHeight});
+          });
+
+        }, 1000);
       }
 
     });
@@ -171,10 +179,29 @@ $(document).ready(function () {
 
     function fixNewsHeight() {
       if ($(window).width() >= 980) {
+
         $(".news_tizer_row").each(function() {
           var thisHeight = $(this).height();
           $(this).children(".news_tizer_one").css({height: thisHeight});
-        })
+        });
+
+        $(".video_list__row").each(function() {
+          var thisHeight = $(this).height();
+          $(this).children(".video_list__item").css({height: thisHeight});
+        });
+
+        $(".advantages__row").each(function() {
+          var thisHeight = $(this).height();
+          $(this).children(".advantages_item").css({height: thisHeight});
+        });
+
+        $(".about_short_tizers").each(function() {
+          var thisHeight = $(this).height();
+          $(this).children(".about_short_tizer").css({height: thisHeight});
+        });
+
+
+
       }
     }
 
