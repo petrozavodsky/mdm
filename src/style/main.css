@@ -407,8 +407,11 @@
 	}
 
 	@media (--w1025) {
-		margin-right: 0px;
 		margin-top: 45px;
+	}
+
+	@media (--w1400) {
+		margin-top: 35px;
 	}
 
 
@@ -1460,6 +1463,11 @@
 		@media (--w980) {
 			width: 35%;
 		}
+
+		@media (--w1200) {
+			width: 100%;
+		}
+
 	}
 }
 
@@ -1544,7 +1552,7 @@
 
 	@media (--w980) {
 		position: absolute;
-		bottom: 40px;
+		top: 40px;
 		left: 20px;
 		text-align: left;
 		padding-top: 0;
@@ -1586,7 +1594,7 @@
 		color: #808285;
 		font-size: 14px;
 		line-height: 17px;
-		width: 40%;
+		width: 80%;
 		display: none;
 
 
@@ -1635,60 +1643,60 @@
 *	forum
 */
 div.forum-header-box {
-	background: rgba(105,	172, 229, 1);
-	border-color: rgba(105,	172, 229, 1);
+	background: rgba(105,	172, 229, 1) !important;
+	border-color: rgba(105,	172, 229, 1) !important;
 }
 
 table.forum-table td, table.forum-table th.forum-column-lastpost, table.forum-table th.forum-column-title, table.forum-table th.forum-first-column, table.forum-table th.forum-last-column, div.forum-info-box, div.forum-reply-form {
-    border-color: rgba(105,	172, 229, 1);
-		background: rgba(105,	172, 229, 0.1);
+    border-color: rgba(105,	172, 229, 1) !important;
+		background: rgba(105,	172, 229, 0.1) !important;
 }
 
 table.forum-table td.forum-column-footer, table.forum-post-table td.forum-column-footer, div.forum-footer-box {
-	background: rgba(105,	172, 229, 0.1);
-	border-color: rgba(105,	172, 229, 1);
+	background: rgba(105,	172, 229, 0.1) !important;
+	border-color: rgba(105,	172, 229, 1) !important;
 }
 
 table.forum-table td, div.forum-info-box, div.forum-reply-form {
-    background: rgba(105,	172, 229, 0.1);
+    background: rgba(105,	172, 229, 0.1) !important;
 }
 
 table.forum-table a, .forum-info-box a {
-	color: rgba(105,	172, 229, 1);
+	color: rgba(105,	172, 229, 1) !important;
 }
 span.forum-menu-item, div.forum-page-navigation a, span.forum-page-current, div.forum-page-navigation a.forum-page-previous, span.forum-page-dots {
-	border-color: rgba(105,	172, 229, 0.5);
+	border-color: rgba(105,	172, 229, 0.5) !important;
 }
 
 table.forum-table th, div.forum-reply-header, div.forum-bbcode-line a:hover, div.forum-bbcode-line a:hover img {
-    background: rgba(105,	172, 229, 0.1);
+    background: rgba(105,	172, 229, 0.1) !important;
 }
 
 table.forum-table tr.forum-row-first td {
-    border-top-color: rgba(105,	172, 229, 1);
+    border-top-color: rgba(105,	172, 229, 1) !important;
 }
 
 table.forum-table tr.forum-row-last td {
-    border-top-color: rgba(105,	172, 229, 1);
+    border-top-color: rgba(105,	172, 229, 1) !important;
 }
 
 
 table.forum-post-table td.forum-cell-user, table.forum-post-table td.forum-cell-contact {
-    background: rgba(105,	172, 229, 0.1);
+    background: rgba(105,	172, 229, 0.1) !important;
 }
 
 table.forum-post-table td.forum-cell-user, table.forum-post-table td.forum-cell-contact {
-    border-left-color: rgba(105,	172, 229, 1);
-    border-right-color: rgba(105,	172, 229, 1);
+    border-left-color: rgba(105,	172, 229, 1) !important;
+    border-right-color: rgba(105,	172, 229, 1) !important;
 }
 
 div.forum-signature-line {
-    border-top-color: rgba(105,	172, 229, 1);
+    border-top-color: rgba(105,	172, 229, 1) !important;
 }
 
 div.forum-post-date {
-    background: rgba(105,	172, 229, 0.1);
-    border-bottom-color: rgba(105,	172, 229, 1);
+    background: rgba(105,	172, 229, 0.1) !important;
+    border-bottom-color: rgba(105,	172, 229, 1) !important;
 }
 
 /*

@@ -8,7 +8,7 @@
 @custom-media --w1025 (min-width: 1025px);
 @custom-media --w1200 (min-width: 1200px);
 @custom-media --w1400 (min-width: 1400px);
-@custom-media --w1600 (min-width: 1600px);
+@custom-media --w1600 (min-width: 1580px);
 
 /*
 * Variables
@@ -46,6 +46,3 @@ $blue: #69ace5;
     font-weight: 700;
     font-style: normal;
 }
-
-
-

@@ -57,7 +57,7 @@ $(document).ready(function () {
            1200: {
              slidesPerView: 4,
            },
-           1600: {
+           1579: {
              slidesPerView: 4,
            }
         }
@@ -85,7 +85,7 @@ $(document).ready(function () {
            1210: {
              slidesPerView: 3
            },
-           1600: {
+           1579: {
              slidesPerView: 3
            }
         }
