@@ -5,12 +5,6 @@
 //= ../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js
 //= ../../bower_components/magnific-popup/dist/jquery.magnific-popup.min.js
 
-//|=== unkomment to use ===| //= ../../node_modules/nprogress/nprogress.js
-//|=== unkomment to use ===| //= ../../bower_components/jquery.scrollTo/jquery.scrollTo.min.js
-//|=== unkomment to use ===| //= ../../bower_components/Tabslet/jquery.tabslet.min.js
-//|=== unkomment to use ===| //= ../../bower_components/ion.rangeslider/js/ion.rangeSlider.min.js
-//|=== unkomment to use ===| //= ../../bower_components/fotorama/fotorama.js
-
 $(document).ready(function () {
 
     // do something
@@ -108,17 +102,7 @@ $(document).ready(function () {
     // подгоняет размер карты
     fixMapHeight()
 
-    function fixMapHeight() {
-        if ($(".contacts_right").lenght != 0) {
-          var mapHeight = $(".contacts_right").height();
-          if ($(window).width() > 979) {
-            $(".contacts_map").css({height: mapHeight});
-          }
-          else {
-            $(".contacts_map").css({height: 400});
-          }
-      }
-    }
+
 
 
 
@@ -173,46 +157,6 @@ $(document).ready(function () {
       }
 
     });
-
-
-    fixNewsHeight();
-
-    function fixNewsHeight() {
-      if ($(window).width() >= 980) {
-
-        $(".news_tizer_row").each(function() {
-          var thisHeight = $(this).height();
-          $(this).children(".news_tizer_one").css({height: thisHeight});
-        });
-
-        $(".video_list__row").each(function() {
-          var thisHeight = $(this).height();
-          $(this).children(".video_list__item").css({height: thisHeight});
-        });
-
-        $(".advantages__row").each(function() {
-          var thisHeight = $(this).height();
-          $(this).children(".advantages_item").css({height: thisHeight});
-        });
-
-        $(".about_short_tizers").each(function() {
-          var thisHeight = $(this).height();
-          $(this).children(".about_short_tizer").css({height: thisHeight});
-        });
-
-
-
-      }
-    }
-
-
-
-
-
-
-
-
-
 
 
     if ( $(".mdm_input") != 0) {
@@ -383,7 +327,6 @@ $(window).resize(function() {
     setPaginationPos();
     reArrangeDom();
     fixMapHeight();
-    fixNewsHeight();
     setTimeout(function() { fixArrowsHeight() }, 500);
 })
 
@@ -397,5 +340,17 @@ function reArrangeDom() {
     else {
       decList.before($(".derection_selector"))
     }
+  }
+}
+
+function fixMapHeight() {
+    if ($(".contacts_right") != 0) {
+      var mapHeight = $(".contacts_right").height();
+      if ($(window).width() > 979) {
+        $(".contacts_map").css({height: mapHeight});
+      }
+      else {
+        $(".contacts_map").css({height: 400});
+      }
   }
 }
